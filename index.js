@@ -82,7 +82,7 @@ function makeSmartPerson(nameIn){
   let newObject = {
       name: nameIn,
       sum: function(num1,num2){ 
- return num1+num2;
+      return num1 + num2;
       },
       speak: function(){
         return `Hello, my name is `+this.name +`.`;
@@ -150,7 +150,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  const thecar = inventory.find((item,index) => { return index === index});
+  const thecar = inventory.find((item,search) => { return search === index});
 
 return `The car is a ${thecar.car_make} ${thecar.car_model}`
 }
